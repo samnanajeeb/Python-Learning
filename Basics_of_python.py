@@ -100,6 +100,28 @@ print(txt.capitalize())
 capital = "This is FUN"
 print(capital.capitalize())
 
+#Python String count() Method
+#Return the number of times the value "apple" appears in the string:
+txt = "I love apples, apple are my favorite fruit"
+x = txt.count("apple")
+print(x)
+
+#Python Booleans
+#Booleans represent one of two values: True or False.
+print(10 > 9)
+print(10 < 9)
+print(10 == 9)
+
+#When you run a condition in an if statement, Python returns True or False:
+new1 = 100
+new2 = 200
+if(new1 > new2):
+	print("new1 is greater than new2")
+else:
+	print("new2 is greater than new1")
+
+
+
 
 
 
