@@ -115,12 +115,15 @@ print(10 == 9)
 #When you run a condition in an if statement, Python returns True or False:
 new1 = 100
 new2 = 200
+
 if(new1 > new2):
-	print("new1 is greater than new2")
+        print("new1 is greater than new2")
 else:
 	print("new2 is greater than new1")
 
-
+#The bool() function allows you to evaluate any value, and give you True or False in return,
+print(bool("Hello"))
+print(bool(15))
 
 
 
