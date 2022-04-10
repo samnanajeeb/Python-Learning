@@ -1,48 +1,107 @@
-# printing variables
 print("Hello")
 print('Hello')
 
 #Assigning string to Variables
-a = "Hello"
-print(a)
+text_example = "Hello"
+print(text_example)
 
 #You can assign a multiline string to a variable by using three quotes:
-a = """Lorem ipsum dolor sit amet,
+a2 = """Lorem ipsum dolor sit amet,
 consectetur adipiscing elit,
 sed do eiusmod tempor incididunt
 ut labore et dolore magna aliqua."""
-print(a)
+print(a2)
 
 
 #three single quotes:
-a = '''Lorem ipsum dolor sit amet,
+a3 = '''Lorem ipsum dolor sit amet,
 consectetur adipiscing elit,
 sed do eiusmod tempor incididunt
 ut labore et dolore magna aliqua.'''
-print(a)
+print(a3)
 
 #Slicing
 #Get the characters from position 2 to position 5 (not included):
-b = "Hello, World!"
-print(b[2:5])
+b1 = "Hello, World!"
+print(b1[2:5])
 
 #Slice From the Start
 #Get the characters from the start to position 5 (not included):
-b = "Hello, World!"
-print(b[:5])
+b2 = "Hello, World!"
+print(b2[:5])
 
 #Python Modify String
 #The upper() method returns the string in upper case
-a = "Hello, World!"
-print(a.upper())
+a4 = "Hello, World!"
+print(a4.upper())
 
 #The lower() method returns the string in lower case:
-a = "Hello, World!"
-print(a.lower())
+a5 = "Hello, World!"
+print(a5.lower())
 
 #Remove Whitespace
 #Whitespace is the space before and/or after the actual text, and very often you want to remove this space.
 #The strip() method removes any whitespace from the beginning or the end:
 
-a = " Hello, World! "
-print(a.strip()) # returns "Hello, World!"
+a6 = " Hello, World! "
+print(a6.strip()) # returns "Hello, World!"
+
+#Replace String
+# The replace() method replaces a string with another string:
+replace_example = "Hello, World!"
+print(replace_example.replace("H", "J"))
+
+#Split String
+#The split() method splits the string into substrings if it finds instances of the separator:
+a7new = "Hello, World!"
+print(a7new.split(",")) 
+# returns ['Hello', ' World!']
+
+#String Concatenation
+#To concatenate, or combine, two strings you can use the + operator
+a = "Hello"
+b = "World"
+c = a + b
+print(c)
+
+#To add a space between them, add a " ":
+a = "Hello"
+b  = "World"
+c = a + " " + b
+print (c)
+
+#Python - Format - Strings
+#Combine string with number
+age = 36
+txt = "I am {}"
+print(txt.format(age))
+
+
+#The format() method takes unlimited number of arguments, and are placed into the respective placeholders:
+number_of_piece = 5
+nos = 567
+amount = 50
+myorder = "I need {} piece of item number{} for {} dollar"
+print(myorder.format(number_of_piece, nos, amount))
+
+#Escape Character
+#To insert characters that are illegal in a string, use an escape character.
+#An escape character is a backslash \ followed by the character you want to insert.
+#An example of an illegal character is a double quote inside a string that is surrounded by double quotes:
+
+txt = "We are the so-called \"Vikings\" from the north."
+print(txt)
+
+#Python String capitalize() Method
+txt = "I am good"
+print(txt.capitalize())
+
+#The capitalize() method returns a string where the first character is upper case, and the rest is lower case.
+capital = "This is FUN"
+print(capital.capitalize())
+
+
+
+
+
+
