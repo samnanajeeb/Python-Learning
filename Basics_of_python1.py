@@ -127,3 +127,31 @@ print(thislist)
 #The pop() method removes the specified index.
 thislist.pop(1)
 print(thislist)
+
+#If you do not specify the index, the pop() method removes the last item.
+thislist.pop()
+print(thislist)
+
+#The del keyword also removes the specified index:
+del thislist[0]
+print(thislist)
+
+# The clear() method empties the list.
+# The list still remains, but it has no content.
+thislist.clear()
+print(thislist)
+
+#Loop Through a List
+#You can loop through the list items by using a for loop:
+#Print all items in the list, one by one
+thislist = ["samna", "sahad", "sajina", "shabina", "Shiban", "Shiblu"]
+for x in thislist:
+  print(x)
+
+#Loop Through the Index Numbers
+#You can also loop through the list items by referring to their index number.
+#Use the range() and len() functions to create a suitable iterable.
+#Print all items by referring to their index number:
+for i in range(len(thislist)):
+  print(thislist[i])
+
