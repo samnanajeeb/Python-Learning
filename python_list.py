@@ -28,3 +28,14 @@ for x in fruits:
                 newlist.append(x)
 print(newlist)
 
+#With list comprehension you can do all that with only one line of code:
+fruits = ["apple", "orange", "Kiwi", "grapes"]
+newlist = [ x for x in fruits if 'a' in x]
+print(newlist)
+
+cousins = ["samna", "sahad", "ayaan", "ayana"]
+newlist = []
+for x in cousins:
+        if "n" in x:
+                newlist.append(x)
+print(x)
